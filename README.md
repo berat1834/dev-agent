@@ -22,7 +22,7 @@
 
 Projeyi yerel ortamınıza klonlayın ve geliştirici modunda kurun:
 
-```bash
+
 git clone [https://github.com/berat1834/dev-agent.git](https://github.com/berat1834/dev-agent.git)
 cd dev-agent
 pip install -e .
@@ -30,7 +30,7 @@ pip install -e .
 ### 💻 Kullanım
 
 1. Yapılandırma (İlk Kurulum)
-```bash
+
 agent init
 1. Yapılandırma (İlk Kurulum)
 Bash
@@ -44,7 +44,9 @@ agent fix main.py
 4. Web Dashboard (Arayüz)
 Bash
 agent ui
+
 🛠️ Teknolojiler
+
 Python 3.12
 
 Typer & Rich (Terminal CLI UI)
