@@ -27,7 +27,11 @@ git clone [https://github.com/berat1834/dev-agent.git](https://github.com/berat1
 cd dev-agent
 pip install -e .
 
-💻 Kullanım
+### 💻 Kullanım
+
+1. Yapılandırma (İlk Kurulum)
+```bash
+agent init
 1. Yapılandırma (İlk Kurulum)
 Bash
 agent init
