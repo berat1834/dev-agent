@@ -26,3 +26,32 @@ Projeyi yerel ortamınıza klonlayın ve geliştirici modunda kurun:
 git clone [https://github.com/berat1834/dev-agent.git](https://github.com/berat1834/dev-agent.git)
 cd dev-agent
 pip install -e .
+
+💻 Kullanım
+1. Yapılandırma (İlk Kurulum)
+Bash
+agent init
+2. Proje Analizi (Terminal)
+Bash
+agent analyze
+3. Otomatik Kod Refactoring / Düzeltme
+Bash
+agent fix main.py
+4. Web Dashboard (Arayüz)
+Bash
+agent ui
+🛠️ Teknolojiler
+Python 3.12
+
+Typer & Rich (Terminal CLI UI)
+
+FastAPI & Uvicorn (REST API & Web Backend)
+
+Tailwind CSS & FontAwesome (Web Dashboard UI)
+
+Google GenAI SDK (Gemini 2.5 Flash)
+
+Ollama API (Local LLM Integration)
+
+📝 Lisans
+Bu proje MIT Lisansı ile lisanslanmıştır.
