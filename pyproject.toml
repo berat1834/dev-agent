@@ -1,0 +1,54 @@
+[build-system]
+requires = ["setuptools>=61.0", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dev-agent"
+version = "1.0.0"
+description = "Otonom AI CLI & Web Geliştirici Aracısı"
+readme = "README.md"
+authors = [{ name = "Berat Baylan", email = "your.email@example.com" }]
+maintainers = [{ name = "Berat Baylan", email = "your.email@example.com" }]
+license = { text = "MIT License" } # If you have a LICENSE file, use 'file = "LICENSE"'
+keywords = ["ai", "agent", "developer", "cli", "web", "automation", "python", "genai"]
+requires-python = ">=3.10"
+classifiers = [
+    "Development Status :: 4 - Beta", # Or "5 - Production/Stable"
+    "Intended Audience :: Developers",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Programming Language :: Python",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.10",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: Methodology :: CLI",
+    "Topic :: Software Development :: Libraries :: Python Modules",
+    "Topic :: Scientific/Engineering :: Artificial Intelligence",
+    "Topic :: Utilities"
+]
+dependencies = [
+    "typer>=0.9.0,<1.0.0",           # Pin major versions to prevent breaking changes
+    "rich>=13.0.0,<14.0.0",          # Pin major versions
+    "google-genai>=0.2.0,<1.0.0",    # Added a minimum version and upper bound
+    "requests>=2.28.0,<3.0.0",       # Added a minimum version and upper bound
+    "fastapi>=0.100.0,<1.0.0",       # Pin major versions
+    "uvicorn>=0.20.0,<1.0.0",        # Pin major versions
+    "pydantic>=2.0,<3.0"             # Pin major versions
+]
+
+[project.urls]
+Homepage = "https://github.com/your-username/dev-agent" # Projenizin ana sayfası
+Repository = "https://github.com/your-username/dev-agent" # Git deposu
+Issues = "https://github.com/your-username/dev-agent/issues" # Hata takip sistemi
+Documentation = "https://your-project-docs.readthedocs.io/en/latest/" # Projenizin dokümantasyon sayfası
+
+[project.scripts]
+agent = "agent.cli:main"
+
+# Optional: Tool specific configurations can be added here
+# For example, for setuptools to find packages automatically:
+# [tool.setuptools.packages.find]
+# where = ["."]
+# include = ["agent*"]
+# exclude = ["tests*"]
